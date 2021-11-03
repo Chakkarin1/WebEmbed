@@ -3,18 +3,14 @@
 #include <WebServer.h>
 #include <WiFiAP.h>
 #include <ESPmDNS.h>
-
 // include EEPROM
 #include <EEPROM.h>
-
 // import "json help kit"
 #include <ArduinoJson.h>  
-
 // define EEPROM SIZE
 #define SPI_FLASH_SEC_SIZE 1024
 
 // define default ssid & pass
-
 
 String apssid ;
 String appass ;
@@ -235,5 +231,5 @@ void loop(void) {
   
   server.handleClient();
   
-  delay(2); // allow the cpu to switch to other tasks
+  delay(2); 
 }
